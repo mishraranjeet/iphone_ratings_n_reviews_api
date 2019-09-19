@@ -35,7 +35,7 @@ with open('iphone_data.csv', 'w') as file:
         fprice = sprice[0]
 
         frating = mrating.split(',')[0]
-        product_name = product_name.split('(')[0] + 'series'
+        # product_name = product_name.split('(')[0] + 'series'
 
         print("Product : ", product_name + "\nPrice :", fprice + "\nRating :", frating + "\nReviews :", reviews + "\n")
         file.write("\n" + product_name + ", " + fprice + ", " + frating + "," + reviews + "\n")
