@@ -11,7 +11,7 @@ from django.shortcuts import HttpResponse
 def home(request):
     return HttpResponse("This is the API for Iphone ratings and reviews put /api to url to view api")
 
-@api_view(['GET', 'POST'])
+@api_view(['GET', 'POST','DELETE'])
 def api_view(request):
     if request.method == 'GET':
         iphonedata = Iphone_Data.objects.all()
