@@ -84,7 +84,7 @@ DATABASES = {
         'USER': 'iphoneapi',
         'PASSWORD':'iphoneapi',
         'HOST': 'localhost',
-        'PORT': ''
+        'PORT': 5432
     }
 }
 
