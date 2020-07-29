@@ -1,4 +1,4 @@
-Django==3.0.2
+Django==3.0.7
 beautifulsoup4==4.9.1
 bs4
 lxml==4.5.2
