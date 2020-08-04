@@ -15,9 +15,9 @@ class Iphone_Data(models.Model):
 # below code run only one time to save the data to database
 #
 #
-# with open('iphone_data.csv') as csvfile:
-#     data_read = csv.DictReader(csvfile)
-#     for row in data_read:
-#         p = Iphone_Data(product_name=row['ProductName'], price=row['Price'], ratings=row['Ratings'],
-#                         reviews=row['Reviews'])
-#         p.save()
+with open('iphone_data.csv') as csvfile:
+    data_read = csv.DictReader(csvfile)
+    for row in data_read:
+        p = Iphone_Data(product_name=row['ProductName'], price=row['Price'], ratings=row['Ratings'],
+                        reviews=row['Reviews'])
+        p.save()
